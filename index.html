@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button color</title>
+    <style>
+       #button1 {
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+       }
+
+       #button2 {
+        background-color: black;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        cursor: pointer;
+       }
+
+       .image {
+        max-height: 250px;
+        object-fit: cover;
+       }
+    </style>
+</head>
+<body>
+    <img src="C:\Users\ZWIVHUYA\Pictures\participation\Screenshot 2025-03-26 194405.png" alt="sadio image" class="image" ><br><br>
+    <button id="button1">Button 1</button>
+    <button id="button2">Button 2</button>
+
+    <script>
+        let button1 = document.getElementById("button1");
+
+        let button2 = document.getElementById("button2");
+
+        //this the function to change the color when button 1 is clicked
+        button1.onclick = function() {
+            button1.style.backgroundColor = "red";//when clicked changes the color for button 1 to be red
+            button2.style.backgroundColor = "purple"; //when clicked changes the color for button 2 to be purple
+        };
+
+        //this the function to change the color when button 2 is clicked
+        button2.onclick = function() { 
+            button1.style.backgroundColor = "purple"; //when clicked changes the color for button 1 to be purple
+            button2.style.backgroundColor = "red";//when clicked changes the color for button 2 to be red
+        };
+
+    </script>
+</body>
+</html>
